@@ -1,10 +1,14 @@
-import * as datGui from "dat.gui"
-import Stats from "stats.js"
+import * as datGui from 'dat.gui'
+import Stats from 'stats.js'
 
+/**
+ * https://github.com/dataarts/dat.gui
+ * @returns {{rotationSpeed: number, bouncingSpeed: number}}
+ */
 export function initGui() {
   const controls = {
     rotationSpeed: 0.02,
-    bouncingSpeed: 0.03
+    bouncingSpeed: 0.03,
   }
   const gui = new datGui.GUI()
   gui.add(controls, 'rotationSpeed', 0, 0.5)
@@ -13,6 +17,10 @@ export function initGui() {
   return controls
 }
 
+/**
+ * https://github.com/mrdoob/stats.js
+ * @returns {Stats}
+ */
 export function initStats() {
   const stats = new Stats()
 

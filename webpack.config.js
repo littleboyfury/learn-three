@@ -6,8 +6,8 @@ module.exports = {
   mode: 'development',
   devServer: {},
   output: {
-    filename: "bundle.js",//输出文件的名称
-    path: path.resolve(__dirname, "dist")//输出文件到磁盘的目录，必须是绝对路径
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist")
   },
   plugins: [
     new HtmlWebpackPlugin({
